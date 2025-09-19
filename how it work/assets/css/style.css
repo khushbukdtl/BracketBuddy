@@ -1,3 +1,384 @@
+/* Home page css*/
+.hero-section {
+    position: relative;
+}
+
+.hero-section .slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.hero-section .slider-container {
+    position: relative;
+}
+
+.hero-section .slide {
+    height: 95dvh;
+    background-size: cover;
+    background-position: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-section .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(46, 94, 170, 0.7);
+    z-index: 1;
+}
+
+.hero-section .slide-content {
+    text-align: center;
+    color: var(--text-color-4);
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 32px;
+}
+
+.hero-section .slide-content .slide__title {
+    /* font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem; */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .slide-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    line-height: 1.8rem;
+}
+
+.hero-section .slick-dots {
+    bottom: 30px;
+}
+
+.hero-section .slick-dots li button:before {
+    color: var(--text-color-4);
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.hero-section .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: var(--text-color-2);
+}
+
+.hero-section .slick-prev {
+    left: 50px;
+}
+
+.hero-section .slick-next {
+    right: 50px;
+}
+
+
+.hero-section .slick-prev::before {
+    content: "\f053";
+}
+
+
+.hero-section .slick-next::before {
+    content: "\f054";
+}
+
+.hero-section .slick-prev,
+.hero-section .slick-next {
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+}
+
+.hero-section .slick-prev:before,
+.hero-section .slick-next:before {
+    font-size: 30px;
+    /* color: var(--white); */
+    /* opacity: 0.7; */
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+}
+
+.hero-section .slick-prev:hover:before,
+.hero-section .slick-next:hover:before {
+    opacity: 1;
+}
+
+/* Contact Section */
+/* .contact__section ,.sports-info    {
+    padding: 80px 0;
+    background: var(--light-gray);
+} */
+
+/* .contact__section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 2rem;
+} */
+
+.contact__section .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.contact__section .contact-form {
+    background: var(--bg-color-4);
+    padding: 48px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact__section .form-group {
+    margin-bottom: 16px;
+}
+
+.contact__section .form-group label {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: var(--text-color-5);
+}
+
+.contact__section .form-group input,
+.contact__section .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--border-color-1);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: "Inter", sans-serif;
+}
+
+.contact__section .form-group input:focus,
+.contact__section .form-group textarea:focus {
+    outline: none;
+    border-color: var(--border-color-3);
+}
+
+.contact__section .form-group.error input,
+.contact__section .form-group.error textarea {
+    border-color: var(--border-color-4);
+}
+
+.contact__section .error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.contact__section .form-group.error .error-message {
+    display: block;
+}
+
+.contact__section .submit-btn {
+    background: var(--bg-color-1);
+    color: var(--text-color-4);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.contact__section .submit-btn:hover {
+    background: #234a8a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 94, 170, 0.3);
+}
+
+.contact__section .contact-image {
+    text-align: center;
+    max-height: 722px;
+    height: 100%;
+}
+
+.contact__section .contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+/* Footer */
+.footer {
+    background: var(--bg-color-8);
+    color: var(--text-color-4);
+    padding: 0rem 0 1rem;
+}
+
+.footer .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer .footer-logo img {
+    height: 60px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.footer .footer-info h3 {
+    color: var(--text-color-2);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer .footer-info p {
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.footer .footer-info i {
+    color: var(--text-color-2);
+    margin-right: 8px;
+    width: 16px;
+}
+
+.footer .footer-bottom p {
+    margin-bottom: 0;
+}
+
+.footer .footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 1rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* tournaments section */
+/* .tournament-info {
+    padding: 80px 0px;
+    background-color: var(--white);
+} */
+
+.tournament-info .info-box {
+    display: flex;
+    gap: 40px;
+}
+
+.tournament-info .info-image {
+    flex: 1 1 45%;
+}
+
+.tournament-info .info-image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tournament-info .info-content {
+    flex: 1 1 50%;
+    color: var(--text-color-5);
+}
+
+.tournament-info .info-content h2,
+.sports-info .sports-title {
+    /* font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: var(--primary-blue); */
+    margin-bottom: 20px;
+}
+
+.tournament-info .info-content p,
+.sports-info .sports-description {
+    /* font-size: 1rem;
+    line-height: 1.6rem; */
+    margin-bottom: 20px;
+}
+
+.tournament-info .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.tournament-info .features-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color-5);
+}
+
+.tournament-info .features-list li:before {
+    content: "\f058";
+    font-weight: 900;
+    font-family: 'Font Awesome\ 5 Free';
+    color: var(--text-color-2);
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.tournament-info .features-list i {
+    color: var(--text-color-2);
+    margin-right: 10px;
+}
+
+
+@media (max-width: 991px) {
+
+    /* Hero Slider Section */
+    .hero-section .slide {
+        height: 80dvh;
+    }
+
+    .hero-section .slick-prev {
+        left: 15px;
+    }
+
+    .hero-section .slick-next {
+        right: 15px;
+    }
+
+    .hero-section .slick-prev:before,
+    .hero-section .slick-next:before {
+        font-size: 20px;
+    }
+
+    /* Contact Section */
+    .contact__section .contact-content {
+        gap: 24px;
+    }
+
+    .contact__section .contact-form {
+        padding: 24px;
+    }
+
+    /* tournaments section */
+    .tournament-info  {
+        padding: 60px 0px;
+    }
+
+    .tournament-info .info-box {
+        gap: 25px;
+    }
+}
+
+
+/* parth css */
 /* new css */
 .how-it-works__banner-section {
     height: 80dvh;

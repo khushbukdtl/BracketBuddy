@@ -75,7 +75,7 @@
 } */
 
 /* Hero Slider Section */
-.hero-section {
+/* .hero-section {
     position: relative;
 }
 
@@ -106,17 +106,17 @@
     bottom: 0;
     background: rgba(46, 94, 170, 0.7);
     z-index: 1;
-}
+} */
 
-.hero-section .slide-content {
+/* .hero-section .slide-content {
     text-align: center;
     color: var(--white);
     z-index: 2;
     max-width: 800px;
     padding: 0 2rem;
-}
+} */
 
-.hero-section .slide-content .slide__title {
+/* .hero-section .slide-content .slide__title {
     font-size: 3.5rem;
     line-height: 4rem;
     font-weight: 700;
@@ -129,10 +129,10 @@
     margin-bottom: 2rem;
     opacity: 0.95;
     line-height: 1.8rem;
-}
+} */
 
 /* Slick Slider Custom Styles */
-.hero-section .slick-dots {
+/* .hero-section .slick-dots {
     bottom: 30px;
 }
 
@@ -140,9 +140,9 @@
     color: var(--white);
     font-size: 12px;
     opacity: 0.5;
-}
+} */
 
-.hero-section .slick-dots li.slick-active button:before {
+/* .hero-section .slick-dots li.slick-active button:before {
     opacity: 1;
     color: var(--secondary-orange);
 }
@@ -170,15 +170,12 @@
     z-index: 3;
     width: 30px;
     height: 30px;
-}
+} */
 
 
-
-.hero-section .slick-prev:before,
+/* .hero-section .slick-prev:before,
 .hero-section .slick-next:before {
     font-size: 30px;
-    /* color: var(--white); */
-    /* opacity: 0.7; */
     font-family: 'Font Awesome\ 5 Free';
     font-weight: 900;
 }
@@ -186,38 +183,39 @@
 .hero-section .slick-prev:hover:before,
 .hero-section .slick-next:hover:before {
     opacity: 1;
-}
+} */
+
 
 /* Contact Section */
-.contact__section ,.sports-info    {
+/* .contact__section ,.sports-info    {
     padding: 80px 0;
     background: var(--light-gray);
-}
+} */
 
-.contact__section .section-title {
+/* .contact__section .section-title {
     text-align: center;
     font-size: 2.5rem;
     line-height: 3rem;
     font-weight: 700;
     color: var(--primary-blue);
     margin-bottom: 2rem;
-}
+} */
 
-.contact__section .contact-content {
+/* .contact__section .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
-}
+} */
 
-.contact__section .contact-form {
+/* .contact__section .contact-form {
     background: var(--white);
     padding: 3rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+} */
 
-.contact__section .form-group {
+/* .contact__section .form-group {
     margin-bottom: 1rem;
 }
 
@@ -226,9 +224,9 @@
     margin-bottom: 0.4rem;
     font-weight: 600;
     color: var(--dark-gray);
-}
+} */
 
-.contact__section .form-group input,
+/* .contact__section .form-group input,
 .contact__section .form-group textarea {
     width: 100%;
     padding: 12px 15px;
@@ -248,9 +246,9 @@
 .contact__section .form-group.error input,
 .contact__section .form-group.error textarea {
     border-color: #dc3545;
-}
+} */
 
-.contact__section .error-message {
+/* .contact__section .error-message {
     color: #dc3545;
     font-size: 0.875rem;
     margin-top: 0.25rem;
@@ -272,9 +270,9 @@
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
-}
+} */
 
-.contact__section .submit-btn:hover {
+/* .contact__section .submit-btn:hover {
     background: #234a8a;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(46, 94, 170, 0.3);
@@ -293,10 +291,10 @@
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     display: block;
-}
+} */
 
 /* Footer */
-.footer {
+/* .footer {
     background: var(--dark-gray);
     color: var(--white);
     padding: 0rem 0 1rem;
@@ -319,9 +317,9 @@
     color: var(--secondary-orange);
     margin-bottom: 1rem;
     font-size: 1.2rem;
-}
+} */
 
-.footer .footer-info p {
+/* .footer .footer-info p {
     margin-bottom: 0.5rem;
     opacity: 0.9;
 }
@@ -341,11 +339,11 @@
     padding-top: 1rem;
     text-align: center;
     opacity: 0.8;
-}
+} */
 
 
 /* tournaments section */
-.tournament-info {
+/* .tournament-info {
     padding: 80px 0px;
     background-color: var(--white);
 }
@@ -370,9 +368,9 @@
 .tournament-info .info-content {
     flex: 1 1 50%;
     color: var(--dark-gray);
-}
+} */
 
-.tournament-info .info-content h2,
+/* .tournament-info .info-content h2,
 .sports-info .sports-title {
     font-size: 2.5rem;
     line-height: 3rem;
@@ -393,26 +391,26 @@
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
-}
+} */
 
-.tournament-info .features-list li {
+/* .tournament-info .features-list li {
     font-size: 1rem;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     color: var(--dark-gray);
-}
+} */
 
-.tournament-info .features-list li:before {
+/* .tournament-info .features-list li:before {
     content: "\f058";
     font-weight: 900;
     font-family: 'Font Awesome\ 5 Free';
     color: #D63700;
     margin-right: 10px;
     font-size: 16px;
-}
+} */
 
-.tournament-info .features-list i {
+/* .tournament-info .features-list i {
     color: var(--secondary-orange);
     margin-right: 10px;
 }
@@ -424,59 +422,7 @@
 
 .site__link:hover {
     text-decoration: none !important;
-}
-
-@media (max-width: 991px) {
-
-    /* Hero Slider Section */
-    .hero-section .slide {
-        height: 80dvh;
-    }
-
-    .hero-section .slick-prev {
-        left: 15px;
-    }
-
-    .hero-section .slick-next {
-        right: 15px;
-    }
-
-    .hero-section .slick-prev:before,
-    .hero-section .slick-next:before {
-        font-size: 20px;
-    }
-
-    /* Contact Section */
-
-    .contact__section ,.sports-info  {
-        padding: 60px 0;
-    }
-
-    .contact__section .contact-content {
-        gap: 1.5rem;
-    }
-
-    .contact__section .contact-form {
-        padding: 1.5rem;
-    }
-
-    /* tournaments section */
-
-    .tournament-info  {
-        padding: 60px 0px;
-    }
-
-    .tournament-info .info-box {
-        gap: 25px;
-    }
-
-    .tournament-info .info-content h2,
-    .sports-info .sports-title {
-        font-size: 1.75rem;
-        line-height: 2.2rem;
-    }
-
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -503,9 +449,9 @@
 
     /* Contact Section */
 
-    .contact__section ,.sports-info  {
+    /* .contact__section ,.sports-info  {
         padding: 50px 0px;
-    }
+    } */
 
     .contact__section .contact-image img {
         max-height: 600px;
@@ -540,10 +486,10 @@
         flex-direction: column;
     }
 
-    .tournament-info .info-content h2,
+    /* .tournament-info .info-content h2,
     .sports-info .sports-title {
         font-size: 1.5rem;
-    }
+    } */
 
     .tournament-info .info-content p,
     .tournament-info .features-list li,

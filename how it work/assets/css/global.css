@@ -23,6 +23,7 @@
      --text-color-7: #333333;
 
 
+
      /* background color */
      --bg-color-1: #2e5eaa;
      --bg-color-2: #D63700;
@@ -30,6 +31,8 @@
      --bg-color-4: #ffffff;
      --bg-color-5: #eaf4ff;
      --bg-color-6: #2470b736;
+     --bg-color-7: #f8f9fa;
+     --bg-color-8: #333333;
 
      /* font size  */
      --fs-1: 56px;
@@ -48,6 +51,8 @@
      /* border color  */
      --border-color-1: #e0e0e0;
      --border-color-2: #D63700;
+     --border-color-3: #2e5eaa;
+     --border-color-4: #dc3545;
 
      /* box shadow color */
      --step-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -128,6 +133,14 @@
 
  .bg__color-6 {
      background-color: var(--bg-color-6);
+ }
+
+ .bg__color-7 {
+     background-color: var(--bg-color-7);
+ }
+
+ .bg__color-8 {
+     background-color: var(--bg-color-8);
  }
 
  /* ---------------------------------------------------- all heading --------------------------------------------- */

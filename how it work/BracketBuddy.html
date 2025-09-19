@@ -20,7 +20,23 @@
     <link href="{% static 'css/purged/bootstrap.min.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/jquery.bracket.min.css' %}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+
+
+    <!-- parth add link  -->
+     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Bootstrap Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+     <link rel="stylesheet" href="./assets/css/global.css">
+     <link rel="stylesheet" href="./assets/css/style-1.css">
+     <link rel="stylesheet" href="./assets/css/style-hiten.css">
+     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -37,24 +53,60 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="header__box">
-                <div class="logo">
-                    <a href="{% url 'index' %}">
-                        <img src="{% static 'image/BuddyBracket-logo.webp' %}" alt="Bracket Buddy Logo" />
-                    </a>
-                </div>
-                <a href="#contact" class="cta__button">Contact Us</a>
-            </div>
+      <div class="container">
+        <div class="header__box">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="javascript:void(0)">
+              <img src="./assets/img/BuddyBracket-logo.webp" alt="Bracket Buddy Logo" />
+            </a>
+          </div>
+
+          <!-- Navbar -->
+          <div class="header-navigation__box d-flex align-items-center flex-row-reverse flex-lg-row gap-3">
+            <nav class="header__navigation navbar navbar-expand-lg">
+              <!-- Toggle button for mobile -->
+              <button
+                class="navbar-toggler toggle__button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="toggle__button--icon"><i class="fas fa-bars"></i></span>
+              </button>
+
+              <!-- Links -->
+              <div class="header-navigation__menu collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                  <li class="nav-item nav__list">
+                    <a class="nav_link" href="#Home">Home</a>
+                  </li>
+                  <li class="nav-item nav__list">
+                    <a class="nav_link" href="#how-it-works">How It Works</a>
+                  </li>
+                  <li class="nav-item nav__list d-block d-sm-none">
+                    <a class="nav_link" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <a href="#contact" class="cta__button d-none d-sm-inline-block">Contact Us</a>
+          </div>
         </div>
+      </div>
     </header>
+    
     <!-- Header ends -->
     <!-- Hero Slider Section -->
     <section class="hero-section">
         <div class="slider-container">
             <div class="slide" style="background-image: url('{% static " image/banner-img1.webp" %}')">
                 <div class="slide-content">
-                    <h2 class="slide__title">Your Tournament Buddy, Always Ready!</h2>
+                    <h2 class="slide__title font-1 fw-bold mb-3 text__color-4">Your Tournament Buddy, Always Ready!</h2>
                     <a href="{% url 'createBracket' %}" class="cta__button">Create Your Bracket Now!</a>
                 </div>
             </div>
@@ -62,10 +114,10 @@
     </section>
 
     <!-- Heading section-->
-    <section class="sports-info">
+    <section class="sports-info section__padding--80px bg__color-7">
         <div class="container">
-            <h1 class="sports-title">Free Online Tournament Bracket Generator for All Sports</h1>
-            <p class="sports-description">Organize your sports events easily with our free online tournament bracket
+            <h1 class="sports-title font-2 text__color-1 fw-bold">Free Online Tournament Bracket Generator for All Sports</h1>
+            <p class="sports-description font-8 text__color-5">Organize your sports events easily with our free online tournament bracket
                 generator. Choose from knockout, round robin, group stage, or Swiss system formats to create
                 professional fixtures in minutes. Perfect for football, tennis, volleyball, badminton, cricket, table
                 tennis, and many other sports. Customize match settings, generate schedules, and track results. Once
@@ -78,15 +130,15 @@
     </section>
 
     <!-- tournaments section  -->
-    <section class="tournament-info">
+    <section class="tournament-info section__padding--80px">
         <div class="container">
             <div class="info-box">
                 <div class="info-image">
                     <img src="{% static 'image/Tournaments.webp' %}" alt="Tournament Example" />
                 </div>
                 <div class="info-content">
-                    <h2>Create and Manage Tournaments Easily</h2>
-                    <p>
+                    <h2 class="font-2 text__color-1 fw-bold">Create and Manage Tournaments Easily</h2>
+                    <p class="font-8 text__color-5">
                         Create and manage sports tournaments with ease using our platform. Whether it's
                         <strong>knockout, round robin,
                             double round robin, group stages</strong>, or
@@ -107,9 +159,9 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact__section">
+    <section id="contact" class="contact__section section__padding--80px bg__color-7">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="text-center mb-5 section__title font-2 text__color-1 fw-bold">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-form">
                     <form id="contactForm">
