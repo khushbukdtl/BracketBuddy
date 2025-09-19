@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn how BracketBuddy.io works - Create tournaments in simple steps with our easy-to-use tournament management system." />
+    <meta name="author" content="Bracket Buddy" />
+    <link rel="icon" type="image/png" href="./assets/img/BuddyBracket-fevicon.webp" />
+    <title>Single Elimination</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/global.css"/>
+    <link rel="stylesheet" href="./assets/css/style-hiten.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__box">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="javascript:void(0)">
+              <img src="./assets/img/BuddyBracket-logo.webp" alt="Bracket Buddy Logo" />
+            </a>
+          </div>
+
+          <!-- Navbar -->
+          <div class="header-navigation__box d-flex align-items-center flex-row-reverse flex-lg-row gap-3">
+            <nav class="header__navigation navbar navbar-expand-lg">
+              <!-- Toggle button for mobile -->
+              <button
+                class="navbar-toggler toggle__button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="toggle__button--icon"><i class="fas fa-bars"></i></span>
+              </button>
+
+              <!-- Links -->
+              <div class="header-navigation__menu collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                  <li class="nav-item nav__list">
+                    <a class="nav_link" href="#Home">Home</a>
+                  </li>
+                  <li class="nav-item nav__list">
+                    <a class="nav_link" href="#how-it-works">How It Works</a>
+                  </li>
+                  <li class="nav-item nav__list d-block d-sm-none">
+                    <a class="nav_link" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <a href="#contact" class="cta__button d-none d-sm-inline-block">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- banner section  -->
+      <section class="how-it-works__banner-section" style="background-image: url('./assets/img/banner-img.webp')">
+        <div class="how-it-works__content">
+          <h1 class="how-it-works__title font-1 fw-bold mb-3 text__color-4">Single Round Robin Tournament</h1>
+          <p class="how-it-works__text fw-normal font-6 text__color-4 mb-4 pb-md-2">One loss and you're out. The simplest and most exciting way to crown a champion.</p>
+          <a href="#learn-more" class="cta__button">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Content Section -->
+      <section id="learn-more" class="first-section__padding scroll__section section__padding--80px">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="step-image__box">
+                <img src="./assets/img/Tournaments.png" alt="Single Elimination Bracket Example" class="step__image" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h2 class="section__title mb-4 font-2 text__color-1 fw-bold">How Single Elimination Works</h2>
+              <p class="font-8 fw-normal text__color-3">
+                In a <span class="text__color-2 fw-bold">Single Elimination</span>
+                tournament, players are eliminated after just one loss. The winners advance to the next round until only one champion remains.
+              </p>
+              <ul class="list-unstyled list-check__icons font-8 text__color-3">
+                <li class="mb-2">Simple and fast format</li>
+                <li class="mb-2">Perfect for small to medium tournaments</li>
+                <li class="mb-2">Exciting do-or-die matches</li>
+                <li class="mb-2">Easy to manage and schedule</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="section__padding benefits-section section__bottom-padding--80px">
+        <div class="container">
+          <h2 class="section__title text-center mb-5 font-2 text__color-1 fw-bold">Why Choose Single Elimination?</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="card benefit__card text-center p-4 h-100">
+                <div class="benefit-icon mb-4 pb-3"><i class="fas fa-bolt"></i></div>
+                <h3 class="card__title fw-bold font-5 text__color-3">Fast-Paced</h3>
+                <p class="card__text font-8 text__color-3 fw-normal">Get results quickly with fewer rounds, perfect for tight schedules.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card benefit__card text-center p-4 h-100">
+                <div class="benefit-icon mb-4 pb-3"><i class="fas fa-trophy"></i></div>
+                <h3 class="card__title fw-bold font-5 text__color-3">Exciting</h3>
+                <p class="card__text font-8 text__color-3 fw-normal">Every game matters — one loss can send you home!</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card benefit__card text-center p-4 h-100">
+                <div class="benefit-icon mb-4 pb-3"><i class="fas fa-calendar-check"></i></div>
+                <h3 class="card__title fw-bold font-5 text__color-3">Easy to Manage</h3>
+                <p class="card__text font-8 text__color-3 fw-normal">Simple scheduling and bracket management for organizers.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card benefit__card text-center p-4 h-100">
+                <div class="benefit-icon mb-4 pb-3"><i class="fas fa-users"></i></div>
+                <h3 class="card__title fw-bold font-5 text__color-3">Fair for Players</h3>
+                <p class="card__text font-8 text__color-3 fw-normal">Everyone competes on equal footing with clear progression.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Use Cases Section -->
+      <section class="section__padding-80px use-cases-section bg__color-5 section__padding--80px">
+        <div class="container">
+          <h2 class="section__title text-center mb-5 font-2 text__color-1 fw-bold">Who Uses Single Elimination?</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card p-4 h-100 text-center shadow-sm">
+                <i class="fas fa-school card__icon text__color-2 mb-4 pb-2"></i>
+                <h3 class="card__title fw-bold font-5 text__color-3">Schools & Colleges</h3>
+                <p class="card__text font-8 text__color-3 fw-normal">Perfect for sports day events, quick competitions, and classroom challenges.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card p-4 h-100 text-center shadow-sm">
+                <i class="fas fa-gamepad card__icon text__color-2 mb-4 pb-2"></i>
+                <h3 class="card__title fw-bold font-5 text__color-3">Esports & Gaming</h3>
+                <p class="card__text font-8 text__color-3 fw-normal">Popular in online gaming tournaments where fast-paced competition is key.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card p-4 h-100 text-center shadow-sm">
+                <i class="fas fa-users card__icon text__color-2 mb-4 pb-2"></i>
+                <h3 class="card__title fw-bold font-5 text__color-3">Clubs & Communities</h3>
+                <p class="card__text font-8 text__color-3 fw-normal">Ideal for local groups, hobby clubs, and friendly competitions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__padding">
+        <div class="container">
+          <h2 class="section__title mb-5 font-2 text__color-1 fw-bold text-center">Frequently Asked Questions</h2>
+          <div class="accordion site__accordion" id="doubleEliminationFAQ">
+
+            <!-- Q1 -->
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                Q1: What is a Single Round Robin tournament?
+                </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#doubleEliminationFAQ">
+                <div class="accordion-body">
+                A Single Round Robin is a format where each team plays against every other team once. The team with the best record at the end is declared the winner.
+                </div>
+            </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                Q2. When is a Single Round Robin format best used?
+                </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#doubleEliminationFAQ">
+                <div class="accordion-body">
+                It works best for small to medium-sized tournaments, where the number of teams is manageable, and organizers want every match to count.
+                </div>
+            </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                Q3. How is the winner decided in Single Round Robin?
+                </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#doubleEliminationFAQ">
+                <div class="accordion-body">
+                The winner is usually the team with the most wins. If two or more teams tie, tie-breaking rules like head-to-head results, points difference, or additional matches may be used.
+                </div>
+            </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="faq4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                Q4. What are the advantages of Single Round Robin?
+                </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#doubleEliminationFAQ">
+                <div class="accordion-body">
+                    <ul>
+                    <li>Every team gets to play against all others</li>
+                    <li>Simple and fair: All teams face the same opponents.</li>
+                    <li>Easy to organize and track results.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="ready-tournament__section text-center mt-0 section__padding--80px">
+        <div class="container">
+          <h2 class="section__title mb-4 font-2 text__color-1 fw-bold">Ready to Create Your Bracket?</h2>
+          <p class="mb-4 font-6 fw-semibold text__color-7">Start building your Single Elimination Tournament with Bracket Buddy today.</p>
+          <a href="https://bracketbuddy.io/create-bracket" class="cta__button"><i class="fas fa-rocket me-2"></i>Generate Bracket Now</a>
+        </div>
+      </section>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <!-- Custom JS -->
+      <script src="./assets/js/custom.js"></script>
+      <script src="./assets/js/custom-slider.js"></script>
+    </main>
+  </body>
+</html>
