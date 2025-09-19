@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn how BracketBuddy.io works - Create tournaments in simple steps with our easy-to-use tournament management system." />
+    <meta name="author" content="Bracket Buddy" />
+    <link rel="icon" type="image/png" href="./assets/img/BuddyBracket-fevicon.webp" />
+    <title>Double Elimination</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/global.css"/>
+    <link rel="stylesheet" href="./assets/css/style-hiten.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__box">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="javascript:void(0)">
+              <img src="./assets/img/BuddyBracket-logo.webp" alt="Bracket Buddy Logo" />
+            </a>
+          </div>
+
+          <!-- Navbar -->
+          <div class="header-navigation__box d-flex align-items-center flex-row-reverse flex-lg-row gap-3">
+            <nav class="header__navigation navbar navbar-expand-lg">
+              <!-- Toggle button for mobile -->
+              <button
+                class="navbar-toggler toggle__button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="toggle__button--icon"><i class="fas fa-bars"></i></span>
+              </button>
+
+              <!-- Links -->
+              <div class="header-navigation__menu collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                  <li class="nav-item nav__list">
+                    <a class="nav_link" href="#Home">Home</a>
+                  </li>
+                  <li class="nav-item nav__list">
+                    <a class="nav_link" href="#how-it-works">How It Works</a>
+                  </li>
+                  <li class="nav-item nav__list d-block d-sm-none">
+                    <a class="nav_link" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <a href="#contact" class="cta__button d-none d-sm-inline-block">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- banner section  -->
+      <section class="how-it-works__banner-section" style="background-image: url('./assets/img/banner-img.webp')">
+        <div class="how-it-works__content">
+          <h1 class="how-it-works__title font-1 fw-bold mb-3 text__color-4">Double Elimination Tournament</h1>
+          <p class="how-it-works__text fw-normal font-6 text__color-4 mb-4 pb-md-2">Elimination after losing two matches.</p>
+          <a href="#learn-more" class="cta__button">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Content Section -->
+      <section id="learn-more" class="scroll__section section__padding--80px">
+        <div class="container">
+          <h2 class="section__title text-center mb-5 font-2 text__color-1 fw-bold">How Double Elimination Works</h2>
+          <div class="row align-items-start align-items-lg-center g-5 gap-2 gap-md-0">
+            <div class="col-md-6">
+              <div class="step-image__box">
+                <img src="./assets/img/double-elimination.png" alt="Single Elimination Bracket Example" class="step__image" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled list-check__icons font-8 text__color-3">
+                <li class="mb-2">In a Double Elimination Tournament, every team has two chances to stay in the competition.</li>
+                <li class="mb-2">All teams begin in the Winners Bracket, where the first round of matches is played.</li>
+                <li class="mb-2">When a team loses in the Winners Bracket, they drop down into the Losers Bracket for a second chance.</li>
+                <li class="mb-2">If a team loses again while in the Losers Bracket, they are completely eliminated from the tournament.</li>
+                <li class="mb-2">The Winners Bracket continues until only one undefeated team remains, while the Losers Bracket continues until only one surviving team is left.</li>
+                <li class="mb-2">The Losers Bracket winner then faces the Winners Bracket champion in the Grand Final.</li>
+                <li class="mb-2">If the Losers Bracket winner defeats the Winners Bracket champion, both teams now have one loss each, which triggers a reset final match.</li>
+                <li class="mb-2">The winner of this reset final match is crowned the overall tournament champion.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="section__padding--80px benefits-section bg__color-5">
+        <div class="container">
+          <h2 class="section__title text-center mb-5 font-2 text__color-1 fw-bold">Types of Tournament Structures</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card benefit__card text-center p-4 h-100 justify-content-between">
+                <div class="card__content">
+                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-bolt"></i></div>
+                  <h3 class="card__title fw-bold font-5 text__color-3">Single Elimination</h3>
+                  <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">Teams are eliminated after one loss. Fast and simple, suitable for knockout tournaments.</p>
+                </div>
+                <a href="javascript:void(0)" class="cta__button mx-auto">Learn More</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card benefit__card text-center p-4 h-100 justify-content-between">
+                <div class="card__content">
+                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-circle-notch"></i></div>
+                  <h3 class="card__title fw-bold font-5 text__color-3">Single Round Robin</h3>
+                  <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">Each team plays against every other team once. Ideal for small tournaments where every match counts.</p>
+                </div>
+                <a href="javascript:void(0)" class="cta__button mx-auto">Learn More</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card benefit__card text-center p-4 h-100 justify-content-between">
+                <div class="card__content">
+                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-times-circle"></i></div>
+                  <h3 class="card__title fw-bold font-5 text__color-3">Double Round Robin</h3>
+                  <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">Each team plays against every other team twice. Offers a fairer result by giving teams a second chance.</p>
+                </div>
+                <a href="javascript:void(0)" class="cta__button mx-auto">Learn More</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card benefit__card text-center p-4 h-100 justify-content-between">
+                <div class="card__content">
+                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-times-circle"></i></div>
+                  <h3 class="card__title fw-bold font-5 text__color-3">Group Stage</h3>
+                  <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">Teams are divided into groups and play against each other. Top teams advance to knockout rounds.</p>
+                </div>
+                <a href="javascript:void(0)" class="cta__button mx-auto">Learn More</a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card benefit__card text-center p-4 h-100 justify-content-between">
+                <div class="card__content">
+                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-times-circle"></i></div>
+                  <h3 class="card__title fw-bold font-5 text__color-3">Swiss System</h3>
+                  <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">
+                    Teams are paired each round based on performance. The highest scoring teams reach the finals without full round-robin play.
+                  </p>
+                </div>
+                <a href="javascript:void(0)" class="cta__button mx-auto">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__padding--80px faq__section">
+        <div class="container">
+          <h2 class="section__title text-center mb-5 font-2 text__color-1 fw-bold">Frequently Asked Questions</h2>
+          <div class="accordion site__accordion" id="doubleEliminationFAQ">
+            <!-- Q1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq1">
+                <button class="accordion-button fw-semibold font-7 text__color-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  Q1: What is a Double Elimination Tournament?
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#doubleEliminationFAQ">
+                <div class="accordion-body">
+                  <p class="font-7 text__color-3 fw-normal">
+                    A Double Elimination Tournament allows each team two chances before being eliminated. Teams first compete in the Winners Bracket, and if they lose, they move to the Losers Bracket.
+                    A second loss results in elimination.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq2">
+                <button
+                  class="accordion-button collapsed fw-semibold font-7 text__color-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse2"
+                  aria-expanded="false"
+                  aria-controls="collapse2"
+                >
+                  Q2: How does the Losers Bracket work?
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#doubleEliminationFAQ">
+                <div class="accordion-body">
+                  <p class="font-7 text__color-3 fw-normal">
+                    Teams that lose in the Winners Bracket drop into the Losers Bracket, where they play against other losing teams. The last surviving team in the Losers Bracket advances to the Grand
+                    Final against the Winners Bracket champion.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq3">
+                <button
+                  class="accordion-button collapsed fw-semibold font-7 text__color-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse3"
+                  aria-expanded="false"
+                  aria-controls="collapse3"
+                >
+                  Q3: What happens in the Grand Final?
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#doubleEliminationFAQ">
+                <div class="accordion-body">
+                  <p class="font-7 text__color-3 fw-normal">
+                    The Winners Bracket champion faces the Losers Bracket champion. If the Losers Bracket winner wins the first final, a reset match is played to determine the overall champion.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq4">
+                <button
+                  class="accordion-button collapsed fw-semibold font-7 text__color-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse4"
+                  aria-expanded="false"
+                  aria-controls="collapse4"
+                >
+                  Q4: Is Double Elimination suitable for small tournaments?
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#doubleEliminationFAQ">
+                <div class="accordion-body">
+                  <p class="font-7 text__color-3 fw-normal">Yes! It works for both small and large tournaments, providing fair chances for every team while keeping fans engaged.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step by Step Section -->
+      <!-- <section class="first-section__padding steps-section">
+        <div class="container">
+          <h2 class="section__title text-center mb-5">How to Run a Single Elimination Tournament</h2>
+          <div class="row align-items-center g-5 mb-5">
+            <div class="col-lg-6">
+              <img src="./assets/img/create-bracket.webp" class="img-fluid rounded shadow" alt="Create Bracket" />
+            </div>
+            <div class="col-lg-6">
+              <h4 class="step-details__title">Step 1: Create Your Bracket</h4>
+              <p>Choose the number of players or teams and let Bracket Buddy generate your tournament bracket automatically.</p>
+            </div>
+          </div>
+          <div class="row align-items-center g-5 flex-lg-row-reverse mb-5">
+            <div class="col-lg-6">
+              <img src="./assets/img/schedule-matches.webp" class="img-fluid rounded shadow" alt="Schedule Matches" />
+            </div>
+            <div class="col-lg-6">
+              <h4 class="step-details__title">Step 2: Schedule Matches</h4>
+              <p>Assign match times and locations effortlessly with our easy-to-use interface.</p>
+            </div>
+          </div>
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <img src="./assets/img/final-champion.webp" class="img-fluid rounded shadow" alt="Crown the Champion" />
+            </div>
+            <div class="col-lg-6">
+              <h4 class="step-details__title">Step 3: Crown the Champion</h4>
+              <p>Track results live and see the bracket update instantly until the final winner emerges.</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Use Cases Section -->
+
+      <!-- Call to Action -->
+      <section class="ready-tournament__section text-center section__padding--80px">
+        <div class="container">
+          <h2 class="section__title mb-4 font-2 text__color-1 fw-bold">Ready to Create Your Bracket?</h2>
+          <p class="mb-4 font-6 fw-semibold text__color-7">Start building your Single Elimination Tournament with Bracket Buddy today.</p>
+          <a href="https://bracketbuddy.io/create-bracket" class="cta__button"><i class="fas fa-rocket me-2"></i>Generate Bracket Now!</a>
+        </div>
+      </section>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <!-- Custom JS -->
+      <script src="./assets/js/custom.js"></script>
+      <script src="./assets/js/custom-slider.js"></script>
+    </main>
+  </body>
+</html>

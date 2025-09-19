@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Tournament Bracket Generator | Knockout & Round Robin</title>
+    <meta name="description"
+        content="Create knockout, round robin, group stage & swiss system tournament brackets for sports like football, tennis & more. Download results in PDF easily." />
+    <meta name="author" content="Bracket Buddy" />
+    <link rel="icon" type="image/png" href="{% static 'image/BuddyBracket-fevicon.webp' %}" />
+    <!-- Banner Background Image -->
+    <link rel="preload" as="image" href="{% static " image/banner-img1.webp" %}" fetchpriority="high">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link href="{% static 'css/purged/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/jquery.bracket.min.css' %}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KN3C8DMZ');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <div class="logo">
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'image/BuddyBracket-logo.webp' %}" alt="Bracket Buddy Logo" />
+                    </a>
+                </div>
+                <a href="#contact" class="cta__button">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    <!-- Header ends -->
+    <!-- Hero Slider Section -->
+    <section class="hero-section">
+        <div class="slider-container">
+            <div class="slide" style="background-image: url('{% static " image/banner-img1.webp" %}')">
+                <div class="slide-content">
+                    <h2 class="slide__title">Your Tournament Buddy, Always Ready!</h2>
+                    <a href="{% url 'createBracket' %}" class="cta__button">Create Your Bracket Now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heading section-->
+    <section class="sports-info">
+        <div class="container">
+            <h1 class="sports-title">Free Online Tournament Bracket Generator for All Sports</h1>
+            <p class="sports-description">Organize your sports events easily with our free online tournament bracket
+                generator. Choose from knockout, round robin, group stage, or Swiss system formats to create
+                professional fixtures in minutes. Perfect for football, tennis, volleyball, badminton, cricket, table
+                tennis, and many other sports. Customize match settings, generate schedules, and track results. Once
+                your tournament is ready, download fixtures and reports in PDF format for printing or sharing. Whether
+                you’re running a local club match, school event, or large competition, our tool makes tournament
+                management simple, fast, and reliable.</p>
+            <div class="text-center"><a href="{% url 'createBracket' %}" class="cta__button">Create Your Bracket
+                    Now!</a></div>
+        </div>
+    </section>
+
+    <!-- tournaments section  -->
+    <section class="tournament-info">
+        <div class="container">
+            <div class="info-box">
+                <div class="info-image">
+                    <img src="{% static 'image/Tournaments.webp' %}" alt="Tournament Example" />
+                </div>
+                <div class="info-content">
+                    <h2>Create and Manage Tournaments Easily</h2>
+                    <p>
+                        Create and manage sports tournaments with ease using our platform. Whether it's
+                        <strong>knockout, round robin,
+                            double round robin, group stages</strong>, or
+                        <strong>Swiss System</strong>, BracketBuddy.io helps you design your brackets, draws, and groups
+                        effortlessly.
+                    </p>
+                    <ul class="features-list">
+                        <li>Supports various tournament types</li>
+                        <li>Easy to manage and update</li>
+                        <li>Export brackets to PDF</li>
+                        <li>Customizable headers</li>
+                    </ul>
+
+                    <a href="{% url 'createBracket' %}" class="cta__button">Create Your Bracket Now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact__section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div id="messages"></div>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required />
+                            <div class="error-message">Please enter your full name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required />
+                            <div class="error-message">Please enter a valid email address</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required />
+                            <div class="error-message">Please enter your phone number</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <div class="error-message">Please enter your message</div>
+                        </div>
+                        <button type="submit" class="submit-btn" id="submitDetails">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-image">
+                    <img src="{% static 'image/contact-img.webp' %}" alt="Contact Us" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Slick Slider JS -->
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+            // Smooth scrolling for navigation links
+            $('a[href^="#"]').on("click", function (event) {
+                var target = $(this.getAttribute("href"));
+                if (target.length) {
+                    event.preventDefault();
+                    $(window).scrollTop(target.offset().top - 80);
+                }
+            });
+            var isSubmitted = false;
+            $("#submitDetails").on("click", function (e) {
+                e.preventDefault(); // Prevent actual form submission
+                isSubmitted = true;
+                let isValid = true;
+
+                // Clear previous errors
+                $(".form-group").removeClass("error");
+                $(".error-message").hide(); // Hide all error messages
+
+                // Fields
+                const name = $("#name").val().trim();
+                const email = $("#email").val().trim();
+                const phone = $("#phone").val().trim();
+                const message = $("#message").val().trim();
+
+                // Regex
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                const phoneRegex = /^[0-9]{10,15}$/;  // Accepts only digits, length between 10–15
+
+                // Name
+                if (name === "") {
+                    $("#name").closest(".form-group").addClass("error")
+                        .find(".error-message").text("Please enter your full name").show();
+                    isValid = false;
+                } else if (name.length < 2) {
+                    $("#name").closest(".form-group").addClass("error")
+                        .find(".error-message").text("Full name must be at least 2 characters").show();
+                    isValid = false;
+                }
+
+                // Email
+                if (email === "") {
+                    $("#email").closest(".form-group").addClass("error")
+                        .find(".error-message").text("Please enter your email address").show();
+                    isValid = false;
+                }
+                else if (!emailRegex.test(email)) {
+                    $("#email").closest(".form-group").addClass("error")
+                        .find(".error-message").text("Invalid email address").show();
+                    isValid = false;
+                }
+
+                // Phone
+                if (phone === "") {
+                    $("#phone").closest(".form-group").addClass("error")
+                        .find(".error-message").text("Enter your mobile number").show();
+                    isValid = false;
+                } else if (!phoneRegex.test(phone)) {
+                    $("#phone").closest(".form-group").addClass("error")
+                        .find(".error-message").text("Invalid mobile number").show();
+                    isValid = false;
+                }
+
+                // Message
+                if (message === "") {
+                    $("#message").closest(".form-group").addClass("error")
+                        .find(".error-message").text("Please enter your message").show();
+                    isValid = false;
+                } else if (message.length < 10) {
+                    $("#message").closest(".form-group").addClass("error")
+                        .find(".error-message").text("Message must be at least 10 characters").show();
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    $.ajax({
+                        url: "{% url 'contactUs' %}",
+                        method: "POST",
+                        headers: {
+                            'X-CSRFToken': '{{ csrf_token }}'
+                        },
+                        data: {
+                            name: name,
+                            email: email,
+                            phoneNumber: phone,
+                            message: message
+                        },
+                        success: function (response) {
+                            // Clear form fields
+                            $("#contactForm")[0].reset();
+                            $("#messages").empty();
+                            $("#messages").append(`<div class="alert alert-success">${response.message}</div>`);
+                        },
+                        error: function (err) {
+                            $('#messages').empty();
+                            let errorMsg = 'Something went wrong';
+                            if (err.responseJSON) {
+                                const errorResponse = err.responseJSON;
+                                if (errorResponse.error) {
+                                    $('#messages').append(`<div class="alert alert-danger">${errorResponse.error}</div>`);
+                                }
+                                if (errorResponse.errors && Array.isArray(errorResponse.errors)) {
+                                    errorResponse.errors.forEach((error) => {
+                                        $('#messages').append(`<div class="alert alert-danger">${error}</div>`);
+                                    });
+                                }
+                            }
+                            else {
+                                $('#messages').append(`<div class="alert alert-danger">${errorMsg}</div>`);
+                            }
+                        }
+                    });
+                }
+            });
+            $("#name, #phone, #email, #message").on("input change", function (e) {
+                e.preventDefault(); // Prevent actual form submission
+                if (isSubmitted) {
+
+                    // Clear previous errors
+                    $(".form-group").removeClass("error");
+                    $(".error-message").hide(); // Hide all error messages
+
+                    // Fields
+                    const name = $("#name").val().trim();
+                    const email = $("#email").val().trim();
+                    const phone = $("#phone").val().trim();
+                    const message = $("#message").val().trim();
+
+                    // Regex
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    const phoneRegex = /^[0-9]{10,15}$/;  // Accepts only digits, length between 10–15
+
+                    // Name
+                    if (name === "") {
+                        $("#name").closest(".form-group").addClass("error")
+                            .find(".error-message").text("Please enter your full name").show();
+                    } else if (name.length < 2) {
+                        $("#name").closest(".form-group").addClass("error")
+                            .find(".error-message").text("Full name must be at least 2 characters").show();
+                    }
+
+                    // Email
+                    if (email === "") {
+                        $("#email").closest(".form-group").addClass("error")
+                            .find(".error-message").text("Please enter your email address").show();
+                    }
+                    else if (!emailRegex.test(email)) {
+                        $("#email").closest(".form-group").addClass("error")
+                            .find(".error-message").text("Invalid email address").show();
+                    }
+
+                    // Phone
+                    if (phone === "") {
+                        $("#phone").closest(".form-group").addClass("error")
+                            .find(".error-message").text("Enter your mobile number").show();
+                    } else if (!phoneRegex.test(phone)) {
+                        $("#phone").closest(".form-group").addClass("error")
+                            .find(".error-message").text("Invalid mobile number").show();
+                    }
+
+                    // Message
+                    if (message === "") {
+                        $("#message").closest(".form-group").addClass("error")
+                            .find(".error-message").text("Please enter your message").show();
+                    } else if (message.length < 10) {
+                        $("#message").closest(".form-group").addClass("error")
+                            .find(".error-message").text("Message must be at least 10 characters").show();
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/lovable-uploads/b8f94cfb-3810-4190-ab2c-dc14ac321608.png" alt="Bracket Buddy Logo" />
+                </div>
+                <div class="footer-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Business Street, Tech City, TC 12345</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@bracketbuddy.com</p>
+                    <p><i class="fas fa-globe"></i> www.bracketbuddy.com</p>
+                </div>
+                </div> -->
+            <div class="footer-bottom">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear());</script> Bracket Buddy. All rights reserved. |
+                    Designed By <a href="https://www.droptechnolab.com/" target="_blank" class="site__link">Drop Techno
+                        Lab</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    </div>
+    <!-- jQuery -->
+    <!-- <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script> -->
+    <script src="{% static 'js/jquery.bracket.min.js' %}"></script>
+    <script src="{% static 'js/Sortable.min.js' %}"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KN3C8DMZ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

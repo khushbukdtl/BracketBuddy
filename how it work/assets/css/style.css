@@ -1,0 +1,346 @@
+/* new css */
+.how-it-works__banner-section {
+    height: 80dvh;
+    background-size: cover;
+    background-position: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.how-it-works__banner-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(46, 94, 170, 0.7);
+    z-index: 1;
+}
+
+.how-it-works__banner-section .how-it-works__content {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.how-it-works__banner-section .how-it-works__title {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ready-tournament__section {
+    border-top: 3px solid var(--border-color-2);
+}
+
+.list-check__icons li {
+    position: relative;
+    padding-left: 26px;
+}
+
+.list-check__icons li:before {
+    content: "\f058";
+    font-weight: 900;
+    font-family: 'Font Awesome\ 5 Free';
+    color: var(--text-color-2);
+    margin-right: 10px;
+    font-size: 16px;
+    position: absolute;
+    left: 0px;
+}
+
+.step-details .step-details__icon {
+    width: 22px;
+}
+
+.step-details .generate__icon {
+    width: 16px;
+}
+
+.step-image__box img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-image__box img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.step-details .step-details__title .step-details__link {
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--text-color-3);
+}
+
+.step-details .step-details__title .step-details__link .step-details__link--icon {
+    color: var(--text-color-1);
+    margin-left: 5px;
+}
+
+.step-details .step-details__title .step-details__link:hover {
+    transform: translateX(10px);
+}
+
+.step-image__box .step__image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    border: 17px solid #c7c7c7;
+}
+
+.sports-section .sport__card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sports-section .sport__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sports-section .card-icon i {
+    font-size: 50px;
+    color: var(--text-color-2);
+}
+
+.sports-section .card-icon svg {
+    fill: var(--text-color-2);
+    width: 50px;
+    height: 50px;
+}
+
+/* old header css  */
+/* Header Styles */
+.header {
+    background: var(--bg-color-4);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .header__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.header .logo a {
+    display: inline-block;
+}
+
+.header .logo img {
+    max-width: 130px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* new css */
+.header .header-navigation__box,
+.header .header__navigation {
+    flex: 1;
+}
+
+.header .header__navigation .nav__list .nav_link {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--text-color-3);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px 10px 15px;
+    display: inline-block;
+    outline: none
+}
+
+.header .header__navigation .nav__list .nav_link:hover,
+.header .header__navigation .nav__list .nav_link.active {
+    color: var(--text-color-1);
+}
+
+/* new css added for the single page ( Single Elimination ) */
+/* Benefits Cards */
+.benefits-section .benefit__card {
+    border: none;
+    border-radius: 16px;
+    background: var(--bg-color-4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.benefits-section .benefit__card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: var(--bg-color-1);
+    color: var(--text-color-4);
+}
+
+.benefit-icon i {
+    font-size: 40px;
+    color: var(--text-color-2);
+}
+
+.benefits-section .benefit__card:hover .card__title,
+.benefits-section .benefit__card:hover .card__text,
+.benefits-section .benefit__card:hover .benefit-icon i {
+    color: var(--text-color-4);
+}
+
+.benefits-section .benefit__card:hover .cta__button {
+    background-color: var(--bg-color-4);
+    color: var(--text-color-1);
+}
+
+/* Use Cases Cards */
+.use-cases-section .card {
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.use-cases-section .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card__icon {
+    font-size: 50px;
+}
+
+.site__accordion {
+    .accordion-item {
+        border: 0px;
+        border-bottom: 1px solid var(--border-color-2);
+        border-radius: 0px;
+
+        .accordion-button {
+            padding: 25px 20px;
+            border-radius: 0px;
+            font-size: 20px;
+
+            &:not(.collapsed) {
+                background-color: var(--text-color-2);
+                color: var(--text-color-4);
+                font-weight: 600;
+
+                &:after {
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .accordion-collapse {
+            --bs-accordion-border-color: transparent;
+            --bs-accordion-border-width: 0px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* header css  */
+    .header .toggle__button {
+        border: none;
+        padding: 0px;
+        box-shadow: none;
+        width: 25px;
+    }
+
+    .header .header__navigation {
+        flex: unset;
+    }
+
+    .header {
+        position: sticky;
+    }
+
+    .header .header__navigation {
+        position: inherit;
+    }
+
+    .header .header-navigation__menu {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 100%;
+        background-color: var(--bg-color-4);
+        padding: 10px 12px 0px 12px;
+    }
+
+
+    .header .header-navigation__menu .navbar-nav {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        background-color: var(--bg-color-6);
+        border-radius: 12px;
+        padding: 15px;
+    }
+
+    .header .header-navigation__menu .nav__list .nav_link {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .header .header-navigation__menu .nav__list .nav_link:hover,
+    .header .header__navigation .nav__list .nav_link.active {
+        background-color: var(--bg-color-4);
+        color: var(--text-color-1);
+    }
+
+    /* toggle button icon change */
+    .header .header__navigation .toggle__button--icon {
+        font-size: 26px;
+        color: var(--text-color-1);
+    }
+
+    .header .header__navigation:has(.header-navigation__menu.show) .toggle__button .toggle__button--icon i::before {
+        content: "\f00d";
+        font-size: 30px;
+    }
+
+    /* body overlay css */
+
+    body:has(.header .header__navigation .header-navigation__menu.show) {
+        overflow: hidden;
+    }
+
+    body:has(.header .header__navigation .header-navigation__menu.show)::after {
+        content: "";
+        background-color: black;
+        opacity: 0.7;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        transition: none;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .step-image__box {
+        text-align: center;
+    }
+
+    /* header css */
+    .header .header__box {
+        padding: 1rem 0rem;
+    }
+
+    .header .logo img {
+        max-width: 110px;
+    }
+}
