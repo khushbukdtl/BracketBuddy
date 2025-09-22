@@ -6,7 +6,7 @@
     <meta name="description" content="Learn how BracketBuddy.io works - Create tournaments in simple steps with our easy-to-use tournament management system." />
     <meta name="author" content="Bracket Buddy" />
     <link rel="icon" type="image/png" href="./assets/img/BuddyBracket-fevicon.webp" />
-    <title>Single Elimination</title>
+    <title>Group Stages</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -20,7 +20,6 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/style-hiten.css" />
-    <link rel="stylesheet" href="./assets/css/style-1.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -76,113 +75,37 @@
       <!-- banner section  -->
       <section class="how-it-works__banner-section" style="background-image: url('./assets/img/banner-img.webp')">
         <div class="how-it-works__content">
-          <h1 class="how-it-works__title font-1 fw-bold mb-3 text__color-4">Single Elimination Tournament</h1>
-          <p class="how-it-works__text fw-normal font-6 text__color-4 mb-4 pb-md-2">One loss and you're out. The simplest and most exciting way to crown a champion.</p>
+          <h1 class="how-it-works__title font-1 fw-bold mb-3 text__color-4">Group Stage Tournament</h1>
+          <p class="how-it-works__text fw-normal font-6 text__color-4 mb-4 pb-md-2">Divide teams into groups and let them compete within their group. The top teams advance to knockout rounds, giving everyone multiple chances.</p>
           <a href="#learn-more" class="cta__button">Learn More</a>
         </div>
       </section>
 
       <!-- Content Section -->
-      <section id="learn-more" class="first-section__padding scroll__section section__padding--80px">
+      <section id="learn-more" class="scroll__section section__padding--80px">
         <div class="container">
-          <h2 class="section__title text-center mb-5 font-2 text__color-1 fw-bold">How Single Elimination Works</h2>
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6">
+          <h2 class="section__title text-center mb-5 font-2 text__color-1 fw-bold">How Group Stage Works</h2>
+          <div class="row align-items-start align-items-lg-center g-5 gap-2 gap-md-0">
+            <div class="col-md-6">
               <div class="step-image__box">
-                <img src="./assets/img/single-elimination.png" alt="Single Elimination Bracket Example" class="step__image" />
+                <img src="./assets/img/group-stage.png" alt="Group Stage Bracket Example" class="step__image" />
               </div>
             </div>
-            <div class="col-lg-6">
-              <p class="font-8 fw-normal text__color-3">
-                In a <span class="text__color-2 fw-bold">Single Elimination</span>
-                tournament, players are eliminated after just one loss. The winners advance to the next round until only one champion remains.
-              </p>
+            <div class="col-md-6">
               <ul class="list-unstyled list-check__icons font-8 text__color-3">
-                <!-- <li class="mb-2">Simple and fast format</li>
-                <li class="mb-2">Perfect for small to medium tournaments</li>
-                <li class="mb-2">Exciting do-or-die matches</li>
-                <li class="mb-2">Easy to manage and schedule</li> -->
-                <li class="mb-2">
-                  In a Single Elimination tournament, players or teams are removed after just one loss. Winners move on to the next round, continuing until a single champion is crowned.
-                </li>
-                <li class="mb-2">
-                  Every game carries high stakes, making each match thrilling for both participants and spectators. One mistake can end a team’s tournament, adding tension and excitement.
-                </li>
-                <li class="mb-2">This format requires fewer matches than round-robin or double elimination tournaments, making it ideal for events with limited participants or tight schedules.</li>
-                <li class="mb-2">Organizers can seed teams to prevent stronger participants from facing each other early, ensuring that later rounds are more competitive and suspenseful.</li>
-                <li class="mb-2">The bracket structure is simple and easy to understand, allowing organizers, players, and fans to track who advances and who is eliminated without confusion.</li>
+                <li class="mb-2">In a Double Elimination Tournament, every team has two chances to stay in the competition.</li>
+                <li class="mb-2">All teams begin in the Winners Bracket, where the first round of matches is played.</li>
+                <li class="mb-2">When a team loses in the Winners Bracket, they drop down into the Losers Bracket for a second chance.</li>
+                <li class="mb-2">If a team loses again while in the Losers Bracket, they are completely eliminated from the tournament.</li>
+                <li class="mb-2">The Winners Bracket continues until only one undefeated team remains, while the Losers Bracket continues until only one surviving team is left.</li>
+                <li class="mb-2">The Losers Bracket winner then faces the Winners Bracket champion in the Grand Final.</li>
+                <li class="mb-2">If the Losers Bracket winner defeats the Winners Bracket champion, both teams now have one loss each, which triggers a reset final match.</li>
+                <li class="mb-2">The winner of this reset final match is crowned the overall tournament champion.</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Benefits Section -->
-      <!-- <section class="section__padding benefits-section section__bottom-padding--80px">
-        <div class="container">
-          <h2 class="section__title text-center mb-5 font-2 text__color-1 fw-bold">Why Choose Single Elimination?</h2>
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-              <div class="card benefit__card text-center p-4 h-100">
-                <div class="benefit-icon mb-4 pb-3"><i class="fas fa-bolt"></i></div>
-                <h3 class="card__title fw-bold font-5 text__color-3">Fast-Paced</h3>
-                <p class="card__text font-8 text__color-3 fw-normal">Get results quickly with fewer rounds, perfect for tight schedules.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="card benefit__card text-center p-4 h-100">
-                <div class="benefit-icon mb-4 pb-3"><i class="fas fa-trophy"></i></div>
-                <h3 class="card__title fw-bold font-5 text__color-3">Exciting</h3>
-                <p class="card__text font-8 text__color-3 fw-normal">Every game matters — one loss can send you home!</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="card benefit__card text-center p-4 h-100">
-                <div class="benefit-icon mb-4 pb-3"><i class="fas fa-calendar-check"></i></div>
-                <h3 class="card__title fw-bold font-5 text__color-3">Easy to Manage</h3>
-                <p class="card__text font-8 text__color-3 fw-normal">Simple scheduling and bracket management for organizers.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="card benefit__card text-center p-4 h-100">
-                <div class="benefit-icon mb-4 pb-3"><i class="fas fa-users"></i></div>
-                <h3 class="card__title fw-bold font-5 text__color-3">Fair for Players</h3>
-                <p class="card__text font-8 text__color-3 fw-normal">Everyone competes on equal footing with clear progression.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- Use Cases Section -->
-      <!-- <section class="section__padding-80px use-cases-section bg__color-5 section__padding--80px">
-        <div class="container">
-          <h2 class="section__title text-center mb-5 font-2 text__color-1 fw-bold">Who Uses Single Elimination?</h2>
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-              <div class="card p-4 h-100 text-center shadow-sm">
-                <i class="fas fa-school card__icon text__color-2 mb-4 pb-2"></i>
-                <h3 class="card__title fw-bold font-5 text__color-3">Schools & Colleges</h3>
-                <p class="card__text font-8 text__color-3 fw-normal">Perfect for sports day events, quick competitions, and classroom challenges.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card p-4 h-100 text-center shadow-sm">
-                <i class="fas fa-gamepad card__icon text__color-2 mb-4 pb-2"></i>
-                <h3 class="card__title fw-bold font-5 text__color-3">Esports & Gaming</h3>
-                <p class="card__text font-8 text__color-3 fw-normal">Popular in online gaming tournaments where fast-paced competition is key.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="card p-4 h-100 text-center shadow-sm">
-                <i class="fas fa-users card__icon text__color-2 mb-4 pb-2"></i>
-                <h3 class="card__title fw-bold font-5 text__color-3">Clubs & Communities</h3>
-                <p class="card__text font-8 text__color-3 fw-normal">Ideal for local groups, hobby clubs, and friendly competitions.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <!-- Benefits Section -->
       <section class="section__padding--80px benefits-section bg__color-5">
@@ -192,9 +115,9 @@
             <div class="col-md-6 col-lg-4">
               <div class="card benefit__card text-center p-4 h-100 justify-content-between">
                 <div class="card__content">
-                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-sync me-2"></i></div>
-                  <h3 class="card__title fw-bold font-5 text__color-3">Double Elimination</h3>
-                  <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">Teams are eliminated after two losses, giving them a second chance to stay in the tournament.</p>
+                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-bolt"></i></div>
+                  <h3 class="card__title fw-bold font-5 text__color-3">Single Elimination</h3>
+                  <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">Teams are eliminated after one loss. Fast and simple, suitable for knockout tournaments.</p>
                 </div>
                 <a href="javascript:void(0)" class="cta__button mx-auto">Learn More</a>
               </div>
@@ -214,7 +137,7 @@
             <div class="col-md-6 col-lg-4">
               <div class="card benefit__card text-center p-4 h-100 justify-content-between">
                 <div class="card__content">
-                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-retweet me-2"></i></div>
+                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-retweet"></i></div>
                   <h3 class="card__title fw-bold font-5 text__color-3">Double Round Robin</h3>
                   <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">Each team plays against every other team twice. Offers a fairer result by giving teams a second chance.</p>
                 </div>
@@ -225,7 +148,7 @@
             <div class="col-md-6 col-lg-4">
               <div class="card benefit__card text-center p-4 h-100 justify-content-between">
                 <div class="card__content">
-                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-users me-2"></i></div>
+                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-users"></i></div>
                   <h3 class="card__title fw-bold font-5 text__color-3">Group Stage</h3>
                   <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">Teams are divided into groups and play against each other. Top teams advance to knockout rounds.</p>
                 </div>
@@ -236,7 +159,7 @@
             <div class="col-md-6 col-lg-4">
               <div class="card benefit__card text-center p-4 h-100 justify-content-between">
                 <div class="card__content">
-                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-chess-board me-2"></i></div>
+                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-chess-board"></i></div>
                   <h3 class="card__title fw-bold font-5 text__color-3">Swiss System</h3>
                   <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">
                     Teams are paired each round based on performance. The highest scoring teams reach the finals without full round-robin play.
@@ -257,14 +180,14 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="faq1">
                 <button class="accordion-button fw-semibold font-7 text__color-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                  Q1: What is a Single Elimination Tournament?
+                  Q1: What is a Double Elimination Tournament?
                 </button>
               </h2>
               <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#doubleEliminationFAQ">
                 <div class="accordion-body">
                   <p class="font-7 text__color-3 fw-normal">
-                    A Single Elimination tournament is the simplest format where teams are knocked out after just one loss. Winners move on to the next round, and this continues until there’s only one
-                    champion. It’s fast, straightforward, and highly competitive.
+                    A Double Elimination Tournament allows each team two chances before being eliminated. Teams first compete in the Winners Bracket, and if they lose, they move to the Losers Bracket.
+                    A second loss results in elimination.
                   </p>
                 </div>
               </div>
@@ -281,14 +204,14 @@
                   aria-expanded="false"
                   aria-controls="collapse2"
                 >
-                  Q2: Why choose Single Elimination?
+                  Q2: How does the Losers Bracket work?
                 </button>
               </h2>
               <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#doubleEliminationFAQ">
                 <div class="accordion-body">
                   <p class="font-7 text__color-3 fw-normal">
-                    This format is perfect if you’re limited on time or want quick results. It’s also very exciting because every game is “do or die,” keeping players and spectators fully engaged from
-                    start to finish.
+                    Teams that lose in the Winners Bracket drop into the Losers Bracket, where they play against other losing teams. The last surviving team in the Losers Bracket advances to the Grand
+                    Final against the Winners Bracket champion.
                   </p>
                 </div>
               </div>
@@ -305,14 +228,13 @@
                   aria-expanded="false"
                   aria-controls="collapse3"
                 >
-                  Q3: How many matches are played?
+                  Q3: What happens in the Grand Final?
                 </button>
               </h2>
               <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#doubleEliminationFAQ">
                 <div class="accordion-body">
                   <p class="font-7 text__color-3 fw-normal">
-                    The total number of matches is always one less than the number of participants. For example, if there are 16 teams, you’ll have 15 matches. This makes it efficient compared to
-                    other structures.
+                    The Winners Bracket champion faces the Losers Bracket champion. If the Losers Bracket winner wins the first final, a reset match is played to determine the overall champion.
                   </p>
                 </div>
               </div>
@@ -329,15 +251,12 @@
                   aria-expanded="false"
                   aria-controls="collapse4"
                 >
-                  Q4: Is this format fair for all players?
+                  Q4: Is Double Elimination suitable for small tournaments?
                 </button>
               </h2>
               <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#doubleEliminationFAQ">
                 <div class="accordion-body">
-                  <p class="font-7 text__color-3 fw-normal">
-                    Yes, but fairness depends on the draw. Since one bad day or unlucky matchup means elimination, it’s best for casual competitions or tournaments where speed and excitement are more
-                    important than giving teams multiple chances.
-                  </p>
+                  <p class="font-7 text__color-3 fw-normal">Yes! It works for both small and large tournaments, providing fair chances for every team while keeping fans engaged.</p>
                 </div>
               </div>
             </div>
@@ -345,12 +264,48 @@
         </div>
       </section>
 
+      <!-- Step by Step Section -->
+      <!-- <section class="first-section__padding steps-section">
+        <div class="container">
+          <h2 class="section__title text-center mb-5">How to Run a Single Elimination Tournament</h2>
+          <div class="row align-items-center g-5 mb-5">
+            <div class="col-lg-6">
+              <img src="./assets/img/create-bracket.webp" class="img-fluid rounded shadow" alt="Create Bracket" />
+            </div>
+            <div class="col-lg-6">
+              <h4 class="step-details__title">Step 1: Create Your Bracket</h4>
+              <p>Choose the number of players or teams and let Bracket Buddy generate your tournament bracket automatically.</p>
+            </div>
+          </div>
+          <div class="row align-items-center g-5 flex-lg-row-reverse mb-5">
+            <div class="col-lg-6">
+              <img src="./assets/img/schedule-matches.webp" class="img-fluid rounded shadow" alt="Schedule Matches" />
+            </div>
+            <div class="col-lg-6">
+              <h4 class="step-details__title">Step 2: Schedule Matches</h4>
+              <p>Assign match times and locations effortlessly with our easy-to-use interface.</p>
+            </div>
+          </div>
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <img src="./assets/img/final-champion.webp" class="img-fluid rounded shadow" alt="Crown the Champion" />
+            </div>
+            <div class="col-lg-6">
+              <h4 class="step-details__title">Step 3: Crown the Champion</h4>
+              <p>Track results live and see the bracket update instantly until the final winner emerges.</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Use Cases Section -->
+
       <!-- Call to Action -->
-      <section class="ready-tournament__section text-center mt-0 section__padding--80px">
+      <section class="ready-tournament__section text-center section__padding--80px">
         <div class="container">
           <h2 class="section__title mb-4 font-2 text__color-1 fw-bold">Ready to Create Your Bracket?</h2>
           <p class="mb-4 font-6 fw-semibold text__color-7">Start building your Single Elimination Tournament with Bracket Buddy today.</p>
-          <a href="https://bracketbuddy.io/create-bracket" class="cta__button"><i class="fas fa-rocket me-2"></i>Generate Bracket Now</a>
+          <a href="https://bracketbuddy.io/create-bracket" class="cta__button"><i class="fas fa-rocket me-2"></i>Generate Bracket Now!</a>
         </div>
       </section>
 
