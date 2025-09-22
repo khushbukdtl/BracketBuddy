@@ -368,7 +368,7 @@
     }
 
     /* tournaments section */
-    .tournament-info  {
+    .tournament-info {
         padding: 60px 0px;
     }
 
@@ -627,6 +627,7 @@
     }
 }
 
+
 @media (max-width: 991px) {
 
     /* header css  */
@@ -723,5 +724,66 @@
 
     .header .logo img {
         max-width: 110px;
+    }
+
+    /* Hero Slider Section */
+
+    .hero-section .slide-content .slide__title {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    }
+
+    .hero-section .slide-content p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    /* Contact Section */
+
+    .contact__section .contact-image img {
+        max-height: 600px;
+    }
+
+    .contact__section .contact-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .contact__section .contact-form {
+        padding: 32px;
+    }
+
+    .footer .footer-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .tournament-info .info-box {
+        flex-direction: column;
+    }
+
+    .tournament-info .info-content p,
+    .tournament-info .features-list li,
+    .sports-info .sports-description {
+        font-size: 0.95rem;
+    }
+
+    .tournament-info .features-list i {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Hero Slider Section */
+
+    .slide-content .slide__title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .contact__section .contact-form {
+        padding: 1.5rem;
     }
 }
