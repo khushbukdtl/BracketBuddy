@@ -546,6 +546,19 @@
     color: var(--text-color-1);
 }
 
+/*Header dropdown menu css  */
+.header{
+    .header__navigation{
+        .nav__list{
+            &.dropdown{
+                &::after{
+                    
+                }
+            }
+        }
+    }
+}
+
 /* new css added for the single page ( Single Elimination ) */
 /* Benefits Cards */
 .benefits-section .benefit__card {
