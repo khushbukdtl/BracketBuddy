@@ -35,7 +35,7 @@
           </div>
 
           <!-- Navbar -->
-          <div class="header-navigation__box d-flex align-items-center flex-row-reverse flex-lg-row gap-3">
+          <div class="header-navigation__box d-flex align-items-center flex-row-reverse flex-lg-row gap-5">
             <nav class="header__navigation navbar navbar-expand-lg">
               <!-- Toggle button for mobile -->
               <button
@@ -56,8 +56,17 @@
                   <li class="nav-item nav__list">
                     <a class="nav_link" href="#Home">Home</a>
                   </li>
-                  <li class="nav-item nav__list">
-                    <a class="nav_link" href="#how-it-works">How It Works</a>
+                  <li class="nav-item nav__list dropdown">
+                    <a class="nav_link" href="#how-it-works" data-bs-toggle="dropdown">How It Works</a>
+
+                    <ul class="dropdown-menu nav__submenu">
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./single-elimination.html">Single Elimination</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./double-elimination.html">Double Elimination</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./single-round-robin.html">Single Round Robin</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./double-round-robin.html">Double Round Robin</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./group-stages.html">Group Stages</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./swiss-system.html">Swiss System</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item nav__list d-block d-sm-none">
                     <a class="nav_link" href="#contact">Contact Us</a>
@@ -77,7 +86,9 @@
       <section class="how-it-works__banner-section" style="background-image: url('./assets/img/banner-img.webp')">
         <div class="how-it-works__content">
           <h1 class="how-it-works__title font-1 fw-bold mb-3 text__color-4">Swiss System Tournament</h1>
-          <p class="how-it-works__text fw-normal font-6 text__color-4 mb-4 pb-md-2">A balanced tournament format where teams keep playing after a loss. Matchups are based on performance, ensuring fair and competitive games every round.</p>
+          <p class="how-it-works__text fw-normal font-6 text__color-4 mb-4 pb-md-2">
+            A balanced tournament format where teams keep playing after a loss. Matchups are based on performance, ensuring fair and competitive games every round.
+          </p>
           <a href="#learn-more" class="cta__button">Learn More</a>
         </div>
       </section>
@@ -126,7 +137,7 @@
             <div class="col-md-6 col-lg-4">
               <div class="card benefit__card text-center p-4 h-100 justify-content-between">
                 <div class="card__content">
-                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-sync "></i></div>
+                  <div class="benefit-icon mb-4 pb-3"><i class="fas fa-sync"></i></div>
                   <h3 class="card__title fw-bold font-5 text__color-3">Double Elimination</h3>
                   <p class="card__text font-7 text__color-3 fw-normal pt-3 pb-2">Teams are eliminated after two losses, giving them a second chance to stay in the tournament.</p>
                 </div>
@@ -184,7 +195,8 @@
               <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#doubleEliminationFAQ">
                 <div class="accordion-body">
                   <p class="font-7 text__color-3 fw-normal">
-                    A Swiss System is a format where all players compete for a fixed number of rounds. Instead of being eliminated, participants are paired each round against others with similar records.
+                    A Swiss System is a format where all players compete for a fixed number of rounds. Instead of being eliminated, participants are paired each round against others with similar
+                    records.
                   </p>
                 </div>
               </div>
@@ -207,7 +219,8 @@
               <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#doubleEliminationFAQ">
                 <div class="accordion-body">
                   <p class="font-7 text__color-3 fw-normal">
-                    It’s ideal for large competitions where you want to keep everyone playing until the end. It balances fairness and competitiveness by matching teams of similar strength as the tournament progresses.
+                    It’s ideal for large competitions where you want to keep everyone playing until the end. It balances fairness and competitiveness by matching teams of similar strength as the
+                    tournament progresses.
                   </p>
                 </div>
               </div>
@@ -229,9 +242,7 @@
               </h3>
               <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#doubleEliminationFAQ">
                 <div class="accordion-body">
-                  <p class="font-7 text__color-3 fw-normal">
-                    Winners are determined by total points after all rounds. In some cases, the top-ranked teams move into playoffs or knockout rounds.
-                  </p>
+                  <p class="font-7 text__color-3 fw-normal">Winners are determined by total points after all rounds. In some cases, the top-ranked teams move into playoffs or knockout rounds.</p>
                 </div>
               </div>
             </div>
@@ -252,14 +263,15 @@
               </h3>
               <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#doubleEliminationFAQ">
                 <div class="accordion-body">
-                  <p class="font-7 text__color-3 fw-normal">Yes. By preventing early eliminations and using performance-based pairings, Swiss ensures fairer results compared to pure knockout formats.</p>
+                  <p class="font-7 text__color-3 fw-normal">
+                    Yes. By preventing early eliminations and using performance-based pairings, Swiss ensures fairer results compared to pure knockout formats.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
 
       <!-- Call to Action -->
       <section class="ready-tournament__section text-center section__padding--80px">

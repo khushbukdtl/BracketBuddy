@@ -63,7 +63,7 @@
           </div>
 
           <!-- Navbar -->
-          <div class="header-navigation__box d-flex align-items-center flex-row-reverse flex-lg-row gap-3">
+          <div class="header-navigation__box d-flex align-items-center flex-row-reverse flex-lg-row gap-5">
             <nav class="header__navigation navbar navbar-expand-lg">
               <!-- Toggle button for mobile -->
               <button
@@ -84,8 +84,17 @@
                   <li class="nav-item nav__list">
                     <a class="nav_link" href="#Home">Home</a>
                   </li>
-                  <li class="nav-item nav__list">
-                    <a class="nav_link" href="#how-it-works">How It Works</a>
+                  <li class="nav-item nav__list dropdown">
+                    <a class="nav_link" href="#how-it-works" data-bs-toggle="dropdown">How It Works</a>
+
+                    <ul class="dropdown-menu nav__submenu">
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./single-elimination.html">Single Elimination</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./double-elimination.html">Double Elimination</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./single-round-robin.html">Single Round Robin</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./double-round-robin.html">Double Round Robin</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./group-stages.html">Group Stages</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./swiss-system.html">Swiss System</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item nav__list d-block d-sm-none">
                     <a class="nav_link" href="#contact">Contact Us</a>
@@ -480,7 +489,7 @@
                 </div>
                 </div> -->
             <div class="footer-bottom">
-                <p>&copy;
+                <p class="font-8 fw-normal">&copy;
                     <script>document.write(new Date().getFullYear());</script> Bracket Buddy. All rights reserved. |
                     Designed By <a href="https://www.droptechnolab.com/" target="_blank" class="site__link">Drop Techno
                         Lab</a>
