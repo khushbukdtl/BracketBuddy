@@ -116,14 +116,15 @@
             <div class="slide" style="background-image: url('{% static " image/banner-img1.webp" %}')">
                 <div class="slide-content">
                     <h2 class="slide__title font-1 fw-bold mb-3 text__color-4">Your Tournament Buddy, Always Ready!</h2>
-                    <a href="{% url 'createBracket' %}" class="cta__button">Create Your Bracket Now!</a>
+                    <!-- <a href="{% url 'createBracket' %}" class="cta__button">Create Your Bracket Now!</a> -->
+                    <a href="{% url 'createBracket' %}" class="cta__button"><i class="fas fa-rocket me-2"></i>Generate Bracket Now</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Heading section-->
-    <section class="sports-info section__padding--80px bg__color-7">
+    <section class="sports-info section__padding--80px bg__color-5">
         <div class="container">
             <h1 class="sports-title font-2 text__color-1 fw-bold">Free Online Tournament Bracket Generator for All Sports</h1>
             <p class="sports-description font-8 text__color-5">Organize your sports events easily with our free online tournament bracket
@@ -133,8 +134,7 @@
                 your tournament is ready, download fixtures and reports in PDF format for printing or sharing. Whether
                 you’re running a local club match, school event, or large competition, our tool makes tournament
                 management simple, fast, and reliable.</p>
-            <div class="text-center"><a href="{% url 'createBracket' %}" class="cta__button">Create Your Bracket
-                    Now!</a></div>
+            <div class="text-center"><a href="{% url 'createBracket' %}" class="cta__button"><i class="fas fa-rocket me-2"></i>Generate Bracket Now</a></div>
         </div>
     </section>
 
@@ -161,7 +161,7 @@
                         <li>Customizable headers</li>
                     </ul>
 
-                    <a href="{% url 'createBracket' %}" class="cta__button">Create Your Bracket Now!</a>
+                    <a href="{% url 'createBracket' %}" class="cta__button"><i class="fas fa-rocket me-2"></i>Generate Bracket Now</a>
                 </div>
             </div>
         </div>
@@ -262,7 +262,7 @@
       </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact__section section__padding--80px bg__color-7">
+    <section id="contact" class="contact__section section__padding--80px">
         <div class="container">
             <h2 class="text-center mb-5 section__title font-2 text__color-1 fw-bold">Get In Touch</h2>
             <div class="contact-content">
