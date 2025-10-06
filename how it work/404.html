@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn how BracketBuddy.io works – create, manage, and organize tournaments easily with our step-by-step guide to different tournament formats." />
+    <meta name="author" content="Bracket Buddy" />
+    <link rel="icon" type="image/png" href="./assets/img/BuddyBracket-fevicon.webp" />
+    <title>How It Works - Tournament Buddy</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Bootstrap Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/style-hiten.css" />
+    <link rel="stylesheet" href="./assets/css/style-1.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <style>
+      .error-page {
+        height: calc(100vh - 149px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--bg-color-5);
+      }
+      .error-page__code {
+        font-size: clamp(100px, 15vw, 180px);
+        font-weight: 700;
+        color: var(--text-color-1);
+        margin-bottom: 8px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .error-page__title {
+        font-weight: 600;
+        color: var(--text-color-5);
+        margin-bottom: 16px;
+      }
+      .error-page__text {
+        font-size: var(--fs-7);
+        max-width: 500px;
+        color: var(--text-color-5);
+        margin-bottom: 32px;
+      }
+
+      @media (max-height:670px) {
+        .error-page {
+        height: 100%;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__box">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="javascript:void(0)">
+              <img src="./assets/img/BuddyBracket-logo.webp" alt="Bracket Buddy Logo" />
+            </a>
+          </div>
+
+          <!-- Navbar -->
+          <div class="header-navigation__box d-flex align-items-center flex-row-reverse flex-lg-row gap-5">
+            <nav class="header__navigation navbar navbar-expand-lg">
+              <!-- Toggle button for mobile -->
+              <button
+                class="navbar-toggler toggle__button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="toggle__button--icon"><i class="fas fa-bars"></i></span>
+              </button>
+
+              <!-- Links -->
+              <div class="header-navigation__menu collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-2">
+                  <li class="nav-item nav__list">
+                    <a class="nav_link" href="#Home">Home</a>
+                  </li>
+                  <li class="nav-item nav__list dropdown">
+                    <a class="nav_link" href="./how it work.html" data-bs-toggle="dropdown">How It Works</a>
+
+                    <ul class="dropdown-menu nav__submenu">
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./single-elimination.html">Single Elimination</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./double-elimination.html">Double Elimination</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./single-round-robin.html">Single Round Robin</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./double-round-robin.html">Double Round Robin</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./group-stages.html">Group Stages</a></li>
+                      <li class="nav-item nav__list"><a class="dropdown-item nav_link" href="./swiss-system.html">Swiss System</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item nav__list d-block d-sm-none">
+                    <a class="nav_link" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <a href="#contact" class="cta__button d-none d-sm-inline-block">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="error-page py-5">
+        <div class="container">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 class="error-page__code">404</h1>
+            <h2 class="error-page__title font-2">Page Not Found</h2>
+            <p class="error-page__text">Oops! The page you're looking for doesn’t exist, has been moved, or is temporarily unavailable.</p>
+            <a href="index.html" class="cta__button"> <i class="fas fa-home me-2"></i> Go Back Home </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <!-- Custom JS -->
+      <script src="./assets/js/custom.js"></script>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <!-- <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/lovable-uploads/b8f94cfb-3810-4190-ab2c-dc14ac321608.png" alt="Bracket Buddy Logo" />
+                </div>
+                <div class="footer-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Business Street, Tech City, TC 12345</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@bracketbuddy.com</p>
+                    <p><i class="fas fa-globe"></i> www.bracketbuddy.com</p>
+                </div>
+                </div> -->
+        <div class="footer-bottom">
+          <p class="font-8 fw-normal">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Bracket Buddy. All rights reserved. | Designed By <a href="https://www.droptechnolab.com/" target="_blank" class="site__link">Drop Techno Lab</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
